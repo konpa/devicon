@@ -256,6 +256,28 @@
         ]
     },
     {
+        "name": "azure",
+        "tags": [
+            "Dev-Ops",
+            "cloud"            
+        ],
+        "versions": {
+            "svg": [
+                "original"                
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#0079eb",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            }
+        ]
+    },
+    {
         "name": "babel",
         "tags": [
             "javascript",
