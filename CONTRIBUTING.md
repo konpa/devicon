@@ -8,7 +8,7 @@ First of all, thanks for taking the time to contribute! This project can only gr
   <li><a href="#terms">Terms</a></li>
   <li><a href="#iconRequirements">What Icons Do We Accept?</a></li>
   <li><a href="#requestingIcon">Requesting An Icon</a></li>
-  <li><a href="#overview">Overview on Submitting Icon (start here if new)</a></li>
+  <li><a href="#overview">Overview on Submitting Icon (start here if new to contributing)</a></li>
   <li><a href="#versionNaming">Naming Conventions</a></li>
   <li><a href="#SVGStandards">SVG Standards</a></li>
   <li><a href="#orgGuidelines">Organizational Guidelines</a></li>
@@ -53,12 +53,13 @@ First of all, thanks for taking the time to contribute! This project can only gr
 
 <hr>
 <h2 id='requestingIcon'>Requesting an Icon</h2>
-<p>To request an icon, you can create an issue in the repository. Please follow these simple guidelines:</p>
+<p>To request an icon, please create an issue in the repository, and follow these guidelines:</p>
 <ul>
   <li>Search for other issues already requesting the icon</li>
   <li>If an issue doesn't exist, create an issue naming it "Icon request: <i>name-of-the-icon</i>". </li>
   <li>Please create separate issues for each icon</li>
-  <li><b>Optional:</b> include links where the icon can be found</li>
+  <li>Use the Issue Template and fill out the proper information</li>
+  <li>Please include links where the icon can be found. Ex: the icon's official webpage/wiki article.</li>
 </ul>
 
 <hr>
@@ -73,7 +74,7 @@ First of all, thanks for taking the time to contribute! This project can only gr
   <li><i>Optional</i>: Reference the issues regarding the new icon. </li>
   <li>Some bots will check your SVGs. If there are any errors, please fix them as instructed.</li>
   <li>Wait for a maintainer to review your changes. They will run the <a href='#peekBot'><code>peek-bot</code></a> to check your icons.</li>
-  <li>If there are no issues, they will run the <a href='#optimizeBot'><code>optimize-bot</code></a> on your SVGs then merge it using <a href="https://github.com/devicons/devicon/discussions/470">squash merging</a>. If there are any problems, they will let you know and give you a chance to fix it.</li>
+  <li>If there are no issues, they will merge it using <a href="https://github.com/devicons/devicon/discussions/470"><b>squash merging</b></a>. If there are any problems, they will let you know, and give you a chance to fix them.</li>
 </ol>
 
 <hr>
@@ -97,7 +98,7 @@ First of all, thanks for taking the time to contribute! This project can only gr
       <td style='width: 33%'>
           <p><b>plain</b>: a one-color version of the original logo. Note that the icon version will be stripped of all colors so you don't have to strip beforehand. </p>      
           <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/devicon/devicon-plain.svg' height='100px' width='100px' />
-          <h4>devicon-plain-wordmark.svg</h4>
+          <h4>devicon-plain.svg</h4>
       </td>
       <td style='width: 33%'>
           <p><b>line</b>: a one-color, line version of the original logo. Note that the icon version will be stripped of all colors so you don't have to strip beforehand. </p>      
@@ -155,15 +156,15 @@ First of all, thanks for taking the time to contribute! This project can only gr
   </li>
   <li>Each <code>.svg</code> file contains one version of an icon in a <code>0 0 128 128</code> viewbox. You can use a service like <a href="https://www.iloveimg.com/resize-image/resize-svg">resize-image</a> for scaling the SVG.</li>
   <li>The icon's strokes and texts must be fills. This is to satisfy our conversion website's <a href="https://icomoon.io/#docs/stroke-to-fill">requirements.</a></li>
-  <li>The <code>SVG</code> element does not need the <code>height</code> and <code>width</code> attributes. However, if you do use it, ensure their values are either <code>"128"</code> or <code>"128px"</code>. Ex: <code>height="128"</code></li>
-  <li>Optimize/compress your SVGs. You can use a service like <a href="https://compressor.io/">compressor</a> or <a href="https://petercollingridge.appspot.com/SVG-editor">SVG Editor</a>.</li>
   <li>Each <code>.svg</code> must use the <code>fill</code> attribute instead of using <code>classes</code> for colors. This is to prevent class name clashing when using inline SVG. See <a href="https://github.com/devicons/devicon/issues/407">here</a> for more details.</li>
 </ul>
 
 <hr>
 <h2 id='orgGuidelines'>Organizational Guidelines</h2>
 <ul>
-  <li>Each icon has its own folder located in the <code>icons</code> folder. All the <code>.svg</code> files for the Icon must go in the same folder</li>
+  <li>Each icon has its own folder located in the <code>icons</code> folder. </li>
+  <li>The folder name must matches the name value uses for the SVG files. Ex: `react-original.svg` should go inside a `react` folder, `microsoftsqlserver` icons should go inside a `microsoftsqlserver` folder. </li>
+  <li>All the <code>.svg</code> files for the Icon must go in the same folder. </li>
   <li><i>Optional</i>: Each folder <i>may</i> contain one <code>.eps</code> file. The <code>.eps</code> file should contains all available versions of an icon. Each version is contained in a 128px by 128px artboard</li>
 </ul>
 

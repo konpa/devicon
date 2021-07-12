@@ -8,10 +8,10 @@ assignees: ''
 ---
 
 ### Problem 
-*Tell us about the current problem that you face that this feature might help you with.*
+<!-- Tell us about the current problem that you face that this feature might help you with. -->
 
 ### Suggested Feature
-*Short description of the feature.*
+<!-- Short description of the feature. -->
 
 ### Why we should have this feature
-*List any extra benefits, other than solving your problem, that this feature will bring to the repo. If none, leave blank.*
+<!-- List any extra benefits, other than solving your problem, that this feature will bring to the repository. If none, leave blank. -->

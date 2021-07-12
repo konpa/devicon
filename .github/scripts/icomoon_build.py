@@ -20,7 +20,7 @@ def main():
     runner = None
     try:
         args = arg_getters.get_selenium_runner_args()
-        new_icons = get_icons_for_building(args.devicon_json_path, args.token)
+        new_icons = get_icons_for_building(args.icomoon_json_path, args.devicon_json_path, args.token)
         if len(new_icons) == 0:
             sys.exit("No files need to be uploaded. Ending script...")
 
@@ -54,21 +54,31 @@ def main():
             runner.close() 
 
 
-def get_icons_for_building(devicon_json_path: str, token: str):
+def get_icons_for_building(icomoon_json_path: str, devicon_json_path: str, token: str):
     """
     Get the icons for building.
+    :param icomoon_json_path - the path to the `icomoon.json`.
     :param devicon_json_path - the path to the `devicon.json`.
     :param token - the token to access the GitHub API.
     """
-    all_icons = filehandler.get_json_file_content(devicon_json_path)
+    devicon_json = filehandler.get_json_file_content(devicon_json_path)
     pull_reqs = api_handler.get_merged_pull_reqs_since_last_release(token)
     new_icons = []
 
     for pull_req in pull_reqs:
         if api_handler.is_feature_icon(pull_req):
-            filtered_icon = util.find_object_added_in_this_pr(all_icons, pull_req["title"])
+            filtered_icon = util.find_object_added_in_pr(devicon_json, pull_req["title"])
             if filtered_icon not in new_icons:
                 new_icons.append(filtered_icon)
+
+    # get any icons that might not have been found by the API
+    new_icons_from_devicon_json = filehandler.find_new_icons_in_devicon_json(
+        devicon_json_path, icomoon_json_path)
+
+    for icon in new_icons_from_devicon_json:
+        if icon not in new_icons:
+            new_icons.append(icon)
+
     return new_icons
 
 

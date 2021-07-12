@@ -130,6 +130,34 @@
         "aliases": []
     },
     {
+        "name": "apachekafka",
+        "tags": [
+            "streaming",
+            "open-source"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original",
+                "original-wordmark"
+            ]
+        },
+        "color": "#231f20",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            },
+            {
+                "base": "original-wordmark",
+                "alias": "plain-wordmark"
+            }
+        ]
+    },
+    {
         "name": "appcelerator",
         "tags": [
             "app",
@@ -466,6 +494,27 @@
         },
         "color": "#D43D44",
         "aliases": []
+    },
+    {
+        "name": "canva",
+        "tags": [
+            "design"
+        ],
+        "versions": {
+            "svg": [
+                "original"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#00C4CC",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            }
+        ]
     },
     {
         "name": "ceylon",
@@ -889,6 +938,35 @@
         "aliases": []
     },
     {
+        "name": "denojs",
+        "tags": [
+            "javascript",
+            "rust",
+            "language"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original",
+                "original-wordmark"
+            ]
+        },
+        "color": "#000000",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            },
+            {
+                "base": "original-wordmark",
+                "alias": "plain-wordmark"
+            }
+        ]
+    },
+    {
         "name": "devicon",
         "tags": [
             "iconset"
@@ -1223,6 +1301,23 @@
         "color": "#f24e1e",
         "aliases": []
     },
+	{
+        "name": "filezilla",
+        "tags": [
+            "ftp"
+        ],
+        "versions": {
+            "svg": [
+                "plain", "plain-wordmark"
+            ],
+            "font": [
+                "plain",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#b30000",
+        "aliases": []
+    },
     {
         "name": "firebase",
         "tags": [
@@ -1386,6 +1481,24 @@
             ]
         },
         "color": "#64328B",
+        "aliases": []
+    },
+    {
+        "name": "gcc",
+        "tags": [
+            "compiler",
+            "linux"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "plain"
+            ],
+            "font": [
+                "plain"
+            ]
+        },
+        "color": "#ffcfab",
         "aliases": []
     },
     {
@@ -1904,6 +2017,31 @@
         "aliases": []
     },
     {
+        "name": "jamstack",
+        "tags": [
+            "javascript",
+            "markup"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain-wordmark"
+            ],
+            "font": [
+                "original",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#F0047F",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            }
+        ]
+    },
+    {
         "name": "jasmine",
         "tags": [
             "testing"
@@ -2014,34 +2152,41 @@
     },
     {
         "name": "jetbrains",
-        "tags": [],
+        "tags": [
+            "ide"
+        ],
         "versions": {
             "svg": [
                 "original",
                 "plain"
             ],
             "font": [
-                "plain",
-                "plain-wordmark",
-                "line",
-                "line-wordmark"
+                "plain"
             ]
         },
-        "color": "#F68B1F",
-        "aliases": [
-            {
-                "base": "plain",
-                "alias": "line"
-            },
-            {
-                "base": "plain",
-                "alias": "line-wordmark"
-            },
-            {
-                "base": "plain",
-                "alias": "plain-wordmark"
-            }
-        ]
+        "color": "#FDCC21",
+        "aliases": []
+    },
+    {
+        "name": "jira",
+        "tags": [
+            "platform",
+            "organize"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain",
+                "plain-wordmark"
+            ],
+            "font": [
+                "plain",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#2684ff",
+        "aliases": []
     },
     {
         "name": "jquery",
@@ -2344,6 +2489,28 @@
         "aliases": []
     },
     {
+        "name": "markdown",
+        "tags": [
+            "markup",
+            "language"
+        ],
+        "versions": {
+            "svg": [
+                "original"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#000000",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            }
+        ]
+    },
+    {
         "name": "meteor",
         "tags": [
             "javascript"
@@ -2490,6 +2657,26 @@
           "font": ["plain"]
         },
         "color": "#8dc63f",
+        "aliases": []
+    },
+    {
+        "name": "neo4j",
+        "tags": [
+            "database"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain",
+                "plain-wordmark"
+            ],
+            "font": [
+                "plain",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#018BFF",
         "aliases": []
     },
     {
@@ -2652,6 +2839,29 @@
         },
         "color": "#cb3837",
         "aliases": []
+    },
+    {
+        "name": "nuxtjs",
+        "tags": [
+            "js",
+            "javascript",
+            "framework",
+            "frontend",
+            "vuejs"
+        ],
+        "color": "#00c48d",
+        "versions": {
+            "SVG": [
+                "original",
+                "original-wordmark",
+                "plain",
+                "plain-wordmark"
+            ],
+            "font": [
+                "plain",
+                "plain-wordmark"
+            ]
+        }
     },
     {
         "name": "objectivec",
@@ -2836,6 +3046,31 @@
         "aliases": []
     },
     {
+        "name": "processing",
+        "tags": [
+            "java",
+            "python",
+            "android",
+            "application",
+            "ide",
+            "framework"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain",
+                "plain-wordmark"
+            ],
+            "fonts": [
+                "plain",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#000000",
+        "aliases": []
+    },
+    {
         "name": "protractor",
         "tags": [
             "framework",
@@ -2924,6 +3159,27 @@
         },
         "color": "#F15524",
         "aliases": []
+    },
+    {
+        "name": "qt",
+        "tags": [
+            "framework"
+        ],
+        "versions": {
+            "svg": [
+                "original"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#41cd52",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            }
+        ]
     },
     {
         "name": "r",
@@ -3455,6 +3711,27 @@
         "aliases": []
     },
     {
+        "name": "svelte",
+        "tags": [
+            "javascript",
+            "framework"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain",
+                "plain-wordmark"
+            ],
+            "font": [
+                "plain",
+                "plain-wordmark"
+            ]
+        },
+        "color": "#ff3e00",
+        "aliases": []
+    },
+    {
         "name": "swift",
         "tags": [
             "language"
@@ -3542,6 +3819,25 @@
             ]
         },
         "color": "#ff6f00",
+        "aliases": []
+    },
+    {
+        "name": "threejs",
+        "tags": [
+            "javascript",
+            "framework"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original",
+                "original-wordmark"
+            ]
+        },
+        "color": "#000000",
         "aliases": []
     },
     {
@@ -3704,6 +4000,26 @@
             ]
         },
         "color": "#dd4814",
+        "aliases": []
+    },
+	{
+        "name": "unity",
+        "tags": [
+			"csharp",
+            "engine",
+            "game"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original",
+                "original-wordmark"
+            ]
+        },
+        "color": "#212b35",
         "aliases": []
     },
     {

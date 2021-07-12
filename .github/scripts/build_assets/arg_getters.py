@@ -33,13 +33,13 @@ def get_selenium_runner_args(peek_mode=False):
                         help="The download destination of the Icomoon files",
                         action=PathResolverAction)
 
-    parser.add_argument("token",
-                        help="The GitHub token to access the GitHub REST API.",
-                        type=str)
-
     if peek_mode:
         parser.add_argument("--pr_title",
                             help="The title of the PR that we are peeking at")
+    else:
+        parser.add_argument("token",
+                            help="The GitHub token to access the GitHub REST API.",
+                            type=str)
 
     return parser.parse_args()
 

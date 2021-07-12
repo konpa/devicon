@@ -6,7 +6,7 @@ import os
 import re
 
 
-def find_new_icons(devicon_json_path: str, icomoon_json_path: str):
+def find_new_icons_in_devicon_json(devicon_json_path: str, icomoon_json_path: str):
     """
     Find the newly added icons by finding the difference between
     the devicon.json and the icomoon.json.

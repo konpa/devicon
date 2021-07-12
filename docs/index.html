@@ -54,13 +54,13 @@
       <h5>First select an icon on the right, then select the version below and copy/paste the code into your project.</h5>
       <ul>
         <li>
-          <h4>Font versions</h4>
+          <h4>Font versions <input type='color' value='#60be86' ng-model="fontBackground"></h4>
           <ul class="icons-list">
             <div ng-repeat="fontVersion in selectedIcon.font">
-              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{'selected-version' : ($index == selectedFontIndex && !colored)}">
+              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{'selected-version' : ($index == selectedFontIndex && !colored)}" ng-style="{'background-color': fontBackground}">
                 <i class="devicon-{{selectedIcon.name}}-{{fontVersion}}"></i>
               </li>
-              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{'selected-version' : ($index == selectedFontIndex && colored)}">
+              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{'selected-version' : ($index == selectedFontIndex && colored)}"  ng-style="{'background-color': fontBackground}">
                 <i class="devicon-{{selectedIcon.name}}-{{fontVersion}} colored"></i>
               </li>
             </div>
@@ -74,9 +74,9 @@
           </div>
         </li>
         <li>
-          <h4>SVG versions</h4>
+          <h4>SVG versions <input type='color' value='#60be86' ng-model="svgBackground"></h4>
           <ul class="icons-list">
-            <li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{'selected-version' : $index == selectedSvgIndex}">
+            <li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{'selected-version' : $index == selectedSvgIndex}" ng-style="{'background-color': svgBackground}">
               <img ng-src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{selectedIcon.name}}/{{selectedIcon.name}}-{{svgVersion}}.svg">
             </li>
           </ul>

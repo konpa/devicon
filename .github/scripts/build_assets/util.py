@@ -46,7 +46,7 @@ def set_env_var(key: str, value: str, delimiter: str='~'):
         raise Exception("This function doesn't support this platform: " + platform.system())
 
 
-def find_object_added_in_this_pr(icons: List[dict], pr_title: str):
+def find_object_added_in_pr(icons: List[dict], pr_title: str):
     """
     Find the icon name from the PR title. 
     :param icons, a list of the font objects found in the devicon.json.

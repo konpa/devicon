@@ -409,3 +409,9 @@ header {
 .footer {
   margin-top: 6rem;
   text-align: center; }
+
+input[type='color'] {
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.5em;
+}
