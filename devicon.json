@@ -3865,6 +3865,22 @@
         "color": "#D1A41A",
         "aliases": []
     },
+	{
+        "name": "tortoisegit",
+        "tags": [
+            "git"
+        ],
+        "versions": {
+            "svg": [
+                "original"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#4a8fb5",
+        "aliases": []
+    },
     {
         "name": "travis",
         "tags": [
