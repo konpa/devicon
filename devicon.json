@@ -3865,6 +3865,23 @@
         "color": "#D1A41A",
         "aliases": []
     },
+	{
+        "name": "towergit",
+        "tags": [
+            "git"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#d18900",
+        "aliases": []
+    },
     {
         "name": "travis",
         "tags": [
