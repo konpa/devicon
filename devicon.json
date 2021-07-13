@@ -4178,6 +4178,24 @@
         "aliases": []
     },
     {
+        "name": "webassembly",
+        "tags": [
+            "web-environment"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "plain"
+            ],
+            "font": [
+                "original",
+                "plain"
+            ]
+        },
+        "color": "#654FF0",
+        "aliases": []
+    },
+    {
         "name": "weblate",
         "tags": [
             "localization"
