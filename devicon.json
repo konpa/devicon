@@ -516,6 +516,24 @@
             }
         ]
     },
+	{
+        "name": "centos",
+        "tags": [
+            "server",
+            "linux"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original"
+            ]
+        },
+        "color": "#932178",
+        "aliases": []
+    },
     {
         "name": "ceylon",
         "tags": [
