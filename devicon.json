@@ -3599,31 +3599,6 @@
         ]
     },
     {
-        "name": "sqlalchemy",
-        "tags": [
-            "python",
-            "orm"
-        ],
-        "versions": {
-            "svg": [
-                "original",
-                "original-wordmark",
-                "plain"
-            ],
-            "font": [
-                "plain",
-                "original-wordmark"
-            ]
-        },
-        "color": "#333333",
-        "aliases": [
-          {
-            "base": "original-wordmark",
-            "alias": "plain-wordmark"
-          }
-        ]
-    },
-    {
         "name": "spring",
         "tags": [
             "framework"
@@ -3652,6 +3627,59 @@
         },
         "color": "#cc1e4c",
         "aliases": []
+    },
+    {
+        "name": "sqlalchemy",
+        "tags": [
+            "python",
+            "orm"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark",
+                "plain"
+            ],
+            "font": [
+                "plain",
+                "original-wordmark"
+            ]
+        },
+        "color": "#333333",
+        "aliases": [
+          {
+            "base": "original-wordmark",
+            "alias": "plain-wordmark"
+          }
+        ]
+    },
+	{
+        "name": "subversion",
+        "tags": [
+            "svn",
+            "version"
+        ],
+        "versions": {
+            "svg": [
+                "original",
+                "original-wordmark"
+            ],
+            "font": [
+                "original",
+                "original-wordmark"
+            ]
+        },
+        "color": "#809cc8",
+        "aliases": [
+            {
+                "base": "original",
+                "alias": "plain"
+            },
+            {
+                "base": "original-wordmark",
+                "alias": "plain-wordmark"
+            }
+        ]
     },
     {
         "name": "microsoftsqlserver",
